@@ -73,4 +73,4 @@ mongoose.connect('mongodb://mahika:mahika123@ds215370.mlab.com:15370/survey_comp
 })
 
 app.use('/auth', auth.router)
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
